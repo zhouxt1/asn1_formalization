@@ -1,0 +1,21 @@
+name = "asn1"
+defaultTargets = ["Asn1"]
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4"
+rev = "v4.34.1"
+
+[[lean_lib]]
+name = "Asn1"
+
+[[lean_lib]]
+name = "Tests"
+globs = ["Tests.+"]
+
+[[lean_lib]]
+name = "Tools"
+
+[[lean_exe]]
+name = "asn1check"
+root = "Tools.Check"
